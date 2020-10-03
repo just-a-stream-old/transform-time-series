@@ -13,7 +13,7 @@ public class TopicConfig {
 
     public TopicConfig(
             @Value("${spring.cloud.stream.kafka.streams.header.traceId}") String traceIdHeaderName,
-            @Value("${spring.cloud.stream.bindings.generateTimeSeriesD1DataModel-in-0.destination}") String ingestEodTimeSeriesD1Topic) {
+            @Value("${spring.cloud.stream.bindings.generateTimeSeriesDataModel-in-0.destination}") String ingestEodTimeSeriesD1Topic) {
         this.traceIdHeaderName = traceIdHeaderName;
         this.ingestEodTimeSeriesD1Topic = ingestEodTimeSeriesD1Topic;
     }
